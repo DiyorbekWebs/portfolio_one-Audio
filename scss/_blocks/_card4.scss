@@ -1,0 +1,84 @@
+.card4 {
+  padding: 0px 165px 40px 165px;
+
+  &__box {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  &__left {
+    height: 320px;
+    width: 540px;
+    border-radius: 8px;
+    background-image: url("../../img/qw.png");
+  }
+  &__right {
+    height: 320px;
+    width: 540px;
+    border-radius: 8px;
+    background-color: #c8c8c8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__title {
+    @include Font14w700;
+    font-size: 28px;
+  }
+  &__link {
+    @include btn;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card4 {
+    padding: 0px 100px 32px 100px;
+
+    &__box {
+      gap: 20px;
+    }
+    &__left {
+      background-position: center;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .card4 {
+    padding: 0px 40px 30px 40px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card4 {
+    padding: 10px 24px 30px 24px ;
+
+    &__box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__left,
+    &__right {
+      height: 200px;
+      width: 100%;
+      border-radius: 8px;
+    }
+    &__item{
+        align-items: center;
+    }
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card4 {
+    padding: 10px 24px;
+
+    &__box {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}

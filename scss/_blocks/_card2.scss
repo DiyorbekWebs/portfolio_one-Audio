@@ -1,0 +1,105 @@
+.card2 {
+  padding: 0px 165px 40px 165px;
+
+  &__box {
+    display: flex;
+    gap: 140px;
+    background-image: url("../../img/Group\ 4.png");
+    background-color: #d87d4a;
+    border-radius: 8px;
+  }
+
+  &__left {
+    background-repeat: no-repeat;
+    height: 493px;
+    width: 410.23358154296875px;
+    background-position: left bottom;
+    background-image: url("../../img/image-removebg-preview\(38\).svg");
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  &__texts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  &__title {
+    width: 261px;
+    @include Font56w700;
+    color: white;
+    line-height: 58px;
+    letter-spacing: 2px;
+  }
+  &__text {
+    @include Font15w500;
+    width: 349px;
+    color: #fff;
+    opacity: 0.75;
+  }
+  &__btn {
+    padding: 15px 30px;
+    background-color: black;
+    @include Font14w700;
+    text-transform: uppercase;
+    transition: 0.8s;
+    color: #fff;
+    &:hover {
+      transition: 0.8s;
+      background-color: #4c4c4c;
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .card2 {
+    padding: 0px 100px 32px 100px;
+
+    &__box {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+    &__left {
+      height: 237px;
+      width: 197px;
+      background-size: 100%;
+    }
+    &__right {
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
+    &__texts {
+      align-items: center;
+      justify-content: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__text {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .card2 {
+    padding: 30px 40px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card2 {
+    padding: 30px 24px 10px 24px;
+
+    &__text{
+      width: 100%;
+    }
+  }
+}

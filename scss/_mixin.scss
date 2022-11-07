@@ -1,0 +1,60 @@
+@mixin Font14w700 {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@mixin Font14w400 {
+    font-family: 'Manrope';
+    font-size: 14px;
+    font-weight: 400;
+
+}
+
+@mixin Font56w700 {
+    font-family: 'Manrope';
+    font-size: 56px;
+    font-weight: 700;
+
+}
+
+@mixin Font15w500 {
+    font-family: 'Manrope';
+    font-size: 15px;
+    font-weight: 500;
+
+}
+
+@mixin  btn {
+    @include Font14w700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1px solid black;
+    color: black;
+    transition: 0.8s;
+    &:hover{
+        transition: 1s;
+        background-color: black;
+        color: white;
+    }
+  }
+
+  @mixin  newText {
+        color: #ffffff;
+        opacity: 0.75;
+        @include Font14w400;
+  }
+  @mixin  headphoneTitle {
+    @include Font56w700;
+    color: #fff;
+    text-transform: uppercase;
+    width: 396px;
+    line-height: 58px;
+    letter-spacing: 2px;
+  }
+  @mixin  heroParagg {
+    width: 349px;
+    @include Font15w500;
+    color: #ffffff;
+    opacity: 0.75;
+  }

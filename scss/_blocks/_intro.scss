@@ -1,0 +1,139 @@
+.intro {
+  padding: 30px 165px;
+
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+  }
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 125px;
+  }
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  &__text {
+    @include newText;
+    color: #d87d4a;
+  }
+  &__title {
+    @include headphoneTitle;
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: 1.42857px;
+    color: #000;
+  }
+  &__pargraf {
+    @include heroParagg;
+    color: #000;
+  }
+  &__btn {
+    @include btn;
+    background-color: #d87d4a;
+    color: #fff;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: #c79a81;
+    }
+  }
+  &__item2 {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  &__img {
+    height: 520px;
+    width: 500px;
+    border-radius: 8px;
+    background-color: gray;
+    border: 1px solid grey;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .intro {
+    padding: 110px 100px;
+    &__item {
+      flex-direction: column;
+      gap: 52px;
+    }
+    &__img {
+      width: 100%;
+      background-size: cover;
+    }
+    &__wrapper {
+      align-items: center;
+    }
+    &__title {
+      text-align: center;
+    }
+    &__pargraf {
+      text-align: center;
+    }
+  }
+}
+@media screen and (max-width: 840px) {
+  .intro {
+    padding: 110px 40px;
+
+    &__img {
+        width: 100%;
+        background-size: cover;
+      }
+      &__title {
+        width: 100%;
+        text-align: center;
+      }
+      &__pargraf {
+        width: 100%;
+        text-align: center;
+      }
+  }
+}
+@media screen and (max-width: 810px) {
+  .intro {
+    padding: 100px 40px;
+
+    &__img {
+        width: 100%;
+        background-size: cover;
+      }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .intro {
+    padding: 65px 24px;
+
+    &__img {
+        width: 100%;
+        background-size: cover;
+      }
+      &__title {
+        width: 100%;
+        text-align: center;
+      }
+      &__pargraf {
+        width: 100%;
+        text-align: center;
+      }
+  }
+}
+@media screen and (max-width: 400px) {
+  .intro {
+    padding: 60px 24px;
+
+    &__img {
+        width: 100%;
+        background-size: cover;
+      }
+  }
+}

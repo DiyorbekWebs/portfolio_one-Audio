@@ -1,0 +1,63 @@
+.card3 {
+  padding: 0px 165px 40px 165px;
+
+  &__box {
+    padding: 100px 0px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    border-radius: 8px;
+    background-image: url("../../img/jhgsfj.png");
+  }
+  &__title {
+    @include Font14w700;
+    font-size: 28px;
+  }
+  &__link {
+    @include Font14w700;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border: 1px solid black;
+    color: black;
+    transition: 0.8s;
+    &:hover{
+        transition: 1s;
+        background-color: black;
+        color: white;
+    }
+  }
+}
+@media screen and (max-width: 890px) {
+  .card3 {
+    padding: 0px 100px 32px 100px;
+    &__box {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .card3 {
+    padding: 0px 40px 20px 40px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .card3 {
+    padding: 10px 24px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .card3 {
+    padding: 10px 24px;
+
+    &__box{
+        padding: 80px 50px;
+        align-items: center;
+    }
+}
+}

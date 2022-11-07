@@ -1,0 +1,205 @@
+.hero {
+  padding: 28px 165px;
+  background-color: black;
+  position: relative;
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    justify-content: center;
+  }
+  &__box2 {
+    padding: 100px 100px;
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  &__text {
+    color: #ffffff;
+    opacity: 0.75;
+    @include Font14w400;
+  }
+  &__title {
+    @include headphoneTitle;
+  }
+  &__pargraf {
+    @include heroParagg;
+  }
+  &__right {
+    width: 780px;
+    height: 600px;
+    background-position: -5px -120px;
+    background-image: url("../../img/Bitmap\ \(3\).png");
+  }
+  &__btn {
+    padding: 15px 30px;
+    background-color: #d87d4a;
+    @include Font14w700;
+    text-transform: uppercase;
+    color: #fff;
+    transition: 1s;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: transparent;
+      color: #d87d4a;
+      transition: 1s;
+      border-color: white;
+    }
+  }
+
+  &__modal {
+    // display: block;
+    padding: 40px 40px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    transform: translateX(-200%);
+    background-color: #000;
+    transition: 1s;
+    display: flex;
+
+
+  }
+  &__modal--left{
+    transition: 1s;
+    transform: translateX(0%);
+  }
+  
+  &__modal-list {
+    display: flex;
+    gap: 34px;
+    flex-direction: column;
+  }
+  &__modal-link {
+    @include Font14w700;
+    font-size: 24px;
+    text-transform: uppercase;
+    transition: 1s;
+    color: white;
+
+    &:hover {
+      transition: 1s;
+      color: #d87d4a;
+    }
+  }
+
+}
+
+@media screen and (max-width: 1300px) {
+  .hero {
+    &__right {
+      width: 800px;
+      height: 600px;
+      background-position: center -110px;
+      background-image: url("../../img/Bitmap\ \(3\).png");
+    }
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .hero {
+    padding: 32px 100px;
+    &__modal {
+      // display: block;
+      margin-top: 90px;
+      width: 50%;
+      height: 100%;
+    }
+
+    &__box {
+      padding: 100px 100px;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-image: url("../../img/Bitmap\ \(3\).png");
+      background-position: center -100px;
+    }
+    &__left {
+      align-items: center;
+      justify-content: center;
+    }
+    &__pargraf {
+      text-align: center;
+    }
+    &__right {
+      display: none;
+    }
+    &__title {
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 840px) {
+  .hero {
+    padding: 30px 40px;
+
+    &__box {
+      padding: 130px 100px;
+      align-items: center;
+      justify-content: center;
+      background-size: 100%;
+      background-image: url("../../img/Bitmap\ \(3\).png");
+      background-position: 0px -120px;
+    }
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .hero {
+    padding: 30px 40px;
+
+    &__box {
+      padding: 100px 10px;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-image: url("../../img/Bitmap\ \(3\).png");
+      // background-position: 0px -90px;
+    }
+    &__title {
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .hero {
+    padding: 30px 24px;
+    &__box2{
+      padding: 0px 24px;
+    }
+    &__title {
+      width: 328px;
+      font-size: 36px;
+      text-align: center;
+      line-height: 38px;
+      letter-spacing: 2px;
+    }
+    &__pargraf {
+      width: 328px;
+    }
+    &__box {
+      padding: 80px 10px;
+      background-image: url("../../img/Bitmap\ \(2\).png");
+      // background-position: 0px 0px;
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero {
+    padding: 0px 24px;
+
+    &__box {
+      // padding: 110px 100px;
+      background-position: center -80px;
+    }
+  }
+}
