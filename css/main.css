@@ -1139,6 +1139,27 @@ li {
   background-color: gray;
   border: 1px solid grey;
 }
+.intro__btns {
+  display: flex;
+  gap: 30px;
+}
+.intro__btns2 {
+  display: flex;
+  background-color: rgb(228, 226, 226);
+}
+.intro__btn2 {
+  padding: 15px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 18px;
+}
+.intro__btn2:nth-child(1), .intro__btn2:nth-child(3) {
+  color: grey;
+}
+.intro__btn2:nth-child(2) {
+  font-family: "Manrope";
+  font-weight: 700;
+}
 
 @media screen and (max-width: 890px) {
   .intro {

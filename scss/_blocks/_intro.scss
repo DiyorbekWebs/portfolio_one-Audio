@@ -56,6 +56,29 @@
     background-color: gray;
     border: 1px solid grey;
   }
+  &__btns {
+    display: flex;
+    gap: 30px;
+  }
+  &__btns2 {
+    display: flex;
+    background-color: rgb(228, 226, 226);
+  }
+  &__btn2{
+    padding: 15px 20px;
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+
+    &:nth-child(1),
+    &:nth-child(3){
+      color: grey;
+    }
+    &:nth-child(2){
+      font-family: 'Manrope';
+      font-weight: 700;
+    }
+  }
 }
 
 @media screen and (max-width: 890px) {
@@ -85,17 +108,17 @@
     padding: 110px 40px;
 
     &__img {
-        width: 100%;
-        background-size: cover;
-      }
-      &__title {
-        width: 100%;
-        text-align: center;
-      }
-      &__pargraf {
-        width: 100%;
-        text-align: center;
-      }
+      width: 100%;
+      background-size: cover;
+    }
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+    &__pargraf {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 @media screen and (max-width: 810px) {
@@ -103,9 +126,9 @@
     padding: 100px 40px;
 
     &__img {
-        width: 100%;
-        background-size: cover;
-      }
+      width: 100%;
+      background-size: cover;
+    }
   }
 }
 
@@ -114,17 +137,17 @@
     padding: 65px 24px;
 
     &__img {
-        width: 100%;
-        background-size: cover;
-      }
-      &__title {
-        width: 100%;
-        text-align: center;
-      }
-      &__pargraf {
-        width: 100%;
-        text-align: center;
-      }
+      width: 100%;
+      background-size: cover;
+    }
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+    &__pargraf {
+      width: 100%;
+      text-align: center;
+    }
   }
 }
 @media screen and (max-width: 400px) {
@@ -132,8 +155,8 @@
     padding: 60px 24px;
 
     &__img {
-        width: 100%;
-        background-size: cover;
-      }
+      width: 100%;
+      background-size: cover;
+    }
   }
 }
